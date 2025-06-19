@@ -21,12 +21,14 @@ This repository contains the evaluation toolkit and supporting data for **ProtoB
 ### `data/`
 We selected 12 protein targets to benchmark molecular generation quality across different models.
 - One folder per model (`pocket2mol/`, `targetdiff/`, etc.) containing SMILES files of generated ligands
-- `bindingdb/` – sets of true active molecules  
+- `bindingdb/` – sets of random molecules (used as reference inactive molecules)
+- `bindingdb_active/` – sets of true active molecules 
+- `actives_bindingdb_cl` - clustered true actives; one representative per similarity cluster
 - `CrossDocked2020/` – cleaned PDB files and corresponding ligands for the targets 
 - `fasta/` – FASTA sequences of the targets 
 
 ### `notebooks/`
-Jupyter notebooks to reproduce the paper figures: docking/Boltz-1 score distributions, attention maps analysis, chemical property distributions, and UMAP-based target specifity analysis.
+Jupyter notebooks to reproduce the paper figures: docking/Boltz-1 score distributions, interpretation of attention maps, chemical property distributions, and UMAP-based target specifity analysis. We also added `allign.ipynb` to show differences between canonical sequences and PDB receptor seqeunces.
  
 
 ### `results/`
