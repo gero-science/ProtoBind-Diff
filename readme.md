@@ -2,7 +2,7 @@
 
 
 
-Implementation of [ProtoBind-Diff: A Structure-Free Diffusion Language Model for Protein Sequence-Conditioned Ligand Design](https://docsend.com/view/bseub85ffi5yyh92)  by Lukia Mistryukova*, Vladimir Manuilov*, Konstantin Avchaciov*, and Peter O. Fedichev.
+Implementation of [ProtoBind-Diff: A Structure-Free Diffusion Language Model for Protein Sequence-Conditioned Ligand Design](https://www.biorxiv.org/content/10.1101/2025.06.16.659955v1)  by Lukia Mistryukova*, Vladimir Manuilov*, Konstantin Avchaciov*, and Peter O. Fedichev.
 
 
 ProtoBind-Diff is a masked diffusion language model that generates target-specific, high-quality small-molecule ligands. Trained entirely without structural input, it enables structure-independent ligand design across the full proteome and matches structure-based methods in docking and Boltz-1 benchmarks.
