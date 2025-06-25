@@ -37,4 +37,5 @@ Jupyter notebooks to reproduce the paper figures: docking/Boltz-1 score distribu
 ---
 
 A quick-start guide, environment setup instructions, license, and a citation will be added later.
+[Subscribe for notification of future updates](https://docs.google.com/forms/d/e/1FAIpQLSdWJkWVT5qZC2Ukplc5Ej7Bxi2a62QeD0I8jFeHqvZIFJVEtA/viewform?usp=preview)
 
