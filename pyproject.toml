@@ -1,0 +1,44 @@
+[project]
+name = "ProtoBind-Diff"
+version = "0.1.0"
+description = "ProtoBind-Diff: A Structure-Free Diffusion Language Model for Protein Sequence-Conditioned Ligand Design"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "MIT AND (Apache-2.0 OR BSD-2-Clause)"
+authors = [
+  { name = "Lukia Mistryukova", email = "lukiia.mistriukova@gero.ai" },
+    { name = "Vladimir Manuilov", email = "vladimir.manuylov@gero.ai" },
+    { name = "Konstantin Avchaciov", email = "ka@gero.ai" },
+    { name = "Peter Fedichev", email = "pf@gero.ai" },
+]
+dependencies = [
+    "torch>=2.2",
+    "numpy>=1.26,<2.0",
+    "lightning>=2.3.0",
+    "rdkit>=2024.3.2",
+    "requests==2.32.3",
+    "pandas>=2.2.2",
+    "PyYAML>=6.0",
+    "scipy>=1.13.0",
+    "scikit-learn>=1.1.0",
+    "fair-esm==2.0.0",
+    "biopython>=1.80",
+    "pysmilesutils @ git+https://github.com/MolecularAI/pysmilesutils.git",
+    "FPSim2==0.5.2",
+    "huggingface_hub",
+    "einops==0.8.0",
+    "easydict>=1.11",
+    "tensorboard>=2.14.0",
+    "rich>=13.5.0"
+]
+
+[project.scripts]
+protobind-train = "protobind_diff.train:main"
+protobind-infer = "protobind_diff.esm_inference:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["protobind_diff"]

@@ -1,0 +1,15 @@
+# REINVENT4 TOML input example for sampling
+run_type = "sampling"
+device = "cuda:0"  # set torch device e.g. "cpu"
+json_out_config = "sampling.json"  # write this TOML to JSON
+
+[parameters]
+## Reinvent: de novo sampling
+# model_file = "priors/reinvent.prior"
+model_file = "staged_learning.chkpt"
+
+output_file = '../generated_ESR1.csv'  # sampled SMILES and NLL in CSV format
+
+num_smiles = 1000  # number of SMILES to be sampled, 1 per input SMILES
+unique_molecules = true  # if true remove all duplicatesd canonicalize smiles
+randomize_smiles = false # if true shuffle atoms in SMILES randomly

@@ -1,0 +1,10 @@
+run_type = "sampling"
+device = "cuda:0"
+json_out_config = "sampling.json"
+
+[parameters]
+model_file = "staged_learning.chkpt"
+output_file = "../generated_NR4A1.csv"
+num_smiles = 1000
+unique_molecules = true
+randomize_smiles = false

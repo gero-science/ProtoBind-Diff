@@ -1,0 +1,8 @@
+L2 family name,L1/L2 family name,Number of samples in protein family,Diversity
+Eraser,Epigenetic regulator/Eraser (KDM1A),0.05,0.64
+Family A G protein-coupled receptor,"Membrane receptor/GPCR (HCRTR1, CCR9)",0.47,0.60
+Kinase,"Enzyme/Kinase (JAK1, RIOK1)",0.37,0.64
+Ligand-gated ion channel,"Ion channel/Ligand-gated ion channel (GRIK1, P2RX3)",0.01,0.75
+Nuclear receptor,"Transcription factor/Nuclear receptor (ESR1, NR4A1)",0.04,0.80
+Oxidoreductase,"Enzyme/Oxidoreductase (IDH1, FTO)",0.04,0.78
+Reader,Epigenetic regulator/Reader (SPIN1),0.02,0.69

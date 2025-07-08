@@ -1,0 +1,42 @@
+# Data paths
+data_dir: ./data/experiments/diffusion/
+output_dir: run
+
+# Sequence settings
+esm_model_name: esm2_t33_650M_UR50D
+
+# SMILES settings
+randomize_smiles: true
+sample_smiles: true
+
+# Training parameters
+epochs: 50
+learning_rate: 0.00005
+weight_decay: 0.0
+optimizer: Lion
+dropout: 0.1
+
+# Batch settings
+batch_volume: 12000000000
+max_size_batch: 16
+accumulate_grad_batches: 1
+
+# Data splitting
+split: RANDOM
+splitting_cutoff: 0.4
+valid_fraction: 0.0001
+test_fraction: 0.0001
+
+# Decoder settings (for masked diffusion)
+num_heads_decoder: 8
+num_decoder_layers: 8
+decoder_hidd_dim: 1280
+expand_feedforward: 2
+decoder_name: decoder_re
+
+# System settings
+float: bfloat16
+gpus: "[0]"
+num_workers: 12
+seed: 777
+

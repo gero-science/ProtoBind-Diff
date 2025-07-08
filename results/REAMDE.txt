@@ -1,0 +1,6 @@
+Non-active molecules were accidentally added to active.
+Directories with suffix "_bug_fix" contain new subset, where zeros are remove
+Directories with suffix "_with_bug" contain old subset (1st revision in paper), where zeros are presented
+
+The final directory "bindingdb" - contains data with zeros, as we allowed non-active molecules to be in random subset
+The final directory "bindingdb_active" - contains data without zeros, all zeros were removed

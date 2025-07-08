@@ -1,0 +1,13 @@
+Name,Number of samples in the train set,Dataset type,Family name,UniProt ID,PDB name,L1 family name,L2 family name,sequence_int
+ESR1,4483,easy,Nuclear receptor,P03372,2r6w,Transcription factor,Nuclear receptor,138
+HCRTR1,12691,easy,GPCR,O43613,4zjc,Membrane receptor,Family A G protein-coupled receptor,176
+JAK1,12455,easy,Kinase,P23458,3eyg,Enzyme,Kinase,1145
+P2RX3,5140,easy,Ion channel,P56373,5svl,Ion channel,Ligand-gated ion channel,2054
+KDM1A,4622,easy,Protein-protein interaction target,O60341,5lhg,Epigenetic regulator,Eraser,2281
+IDH1,5177,easy,Non-kinase enzyme,O75874,4umx,Enzyme,Oxidoreductase,2908
+RIOK1,15,hard,Kinase,Q9BRS2,4otp,Enzyme,Kinase,1163
+NR4A1,28,hard,Nuclear receptor,P22736,3v3q,Transcription factor,Nuclear receptor,1230
+GRIK1,335,hard,Ion channel,P39086,3fv1,Ion channel,Ligand-gated ion channel,1852
+FTO,37,hard,Non-kinase enzyme,Q9C0B1,4zs3,Enzyme,Oxidoreductase,5927
+SPIN1,19,hard,Protein-protein interaction target,Q9Y657,5jsj,Epigenetic regulator,Reader,7922
+CCR9,82,hard,GPCR,P51686,5lwe,Membrane receptor,Family A G protein-coupled receptor,4006
