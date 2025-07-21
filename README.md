@@ -1,6 +1,6 @@
 # ProtoBind-Diff: A Structure-Free Diffusion Language Model for Protein Sequence-Conditioned Ligand Design
 
-
+[![Demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/ai-gero/ProtoBind-Diff)
 
 Implementation of [ProtoBind-Diff: A Structure-Free Diffusion Language Model for Protein Sequence-Conditioned Ligand Design](https://www.biorxiv.org/content/10.1101/2025.06.16.659955v1)  by Lukia Mistryukova*, Vladimir Manuilov*, Konstantin Avchaciov*, and Peter O. Fedichev.
 
@@ -12,7 +12,7 @@ If you have questions, feel free to open an issue or send us an email at lukiia
 
 ![Alt Text](graphical-abstract.png)
 
-
+You can also try out the model on [Hugging Face Spaces](https://huggingface.co/spaces/ai-gero/ProtoBind-Diff).
 
 ## Overview
 
