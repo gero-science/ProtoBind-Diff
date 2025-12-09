@@ -612,7 +612,7 @@ class DatasetMolecularEmbeddings(DatasetNumpy):
                 and its length instead of a fixed-size embedding.
          """
         seq_id = self.sequences[idx]
-        smi_id = self.smiles[idx]
+        smi_id = self.get_smiles_id(idx)
         return (self.parametrize_sequence(seq_id),) + self.parametrize_smiles(smi_id) + (
             self.sequences_length[idx], seq_id, smi_id)
 
