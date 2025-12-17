@@ -752,10 +752,10 @@ class Decoder_RoPE(nn.Module):
         if self.apply_seq_linear:
             sequence = self.linear_seq(sequence)
         condition = torch.cat([sigma, sequence], dim=1)
-        sequence_lengths += 1
-
+        seq_lens = sequence_lengths + 1
+        
         range_tensor = torch.arange(condition.shape[1], device=sequence.device).unsqueeze(0)
-        condition_mask = range_tensor < sequence_lengths.unsqueeze(1)
+        condition_mask = range_tensor < seq_lens.unsqueeze(1)
         condition_mask = condition_mask.unsqueeze(1).unsqueeze(2)
         if lig_padding_mask is not None:
             lig_padding_mask = lig_padding_mask.unsqueeze(1).unsqueeze(2)

@@ -288,6 +288,12 @@ class ModelGenerator(pl.LightningModule):
             if (not torch.allclose(x_next, x)):
                 p_x0_cache = None
             x = x_next
+            positions = torch.arange(len(x[0]), dtype=torch.float32).unsqueeze(0)
+            positions = positions.expand(len(x), -1)
+            mask_probs = torch.sigmoid((positions - 100) * 0.1)
+            mask = torch.bernoulli(mask_probs)
+            bool_mask = mask.bool()
+            x[bool_mask] = 4
 
         if self.noise_removal: 
             t = min_t * torch.ones(bs, 1, device=self.device)
