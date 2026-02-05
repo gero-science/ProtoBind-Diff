@@ -141,5 +141,5 @@ If you use this code or the models in your research, please cite the following p
 ```
 
 ## License 
-The code and model weights are released under MIT license. See the [LICENSE](LICENSE) file for details.
+The code and model weights are released under CC BY-NC 4.0 license. See the [LICENSE](LICENSE) file for details.
 
